@@ -1,5 +1,7 @@
 import './globals.css'
 import { Poppins, Roboto } from 'next/font/google'
+import { Analytics } from "@vercel/analytics/react"
+
 
 const poppins = Poppins({ 
   weight: ['400', '700'],
@@ -25,7 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${poppins.variable} ${roboto.variable}`}>
-      <body>{children}</body>
+      <body>{children}
+      <Analytics/>
+      </body>
     </html>
   )
 }

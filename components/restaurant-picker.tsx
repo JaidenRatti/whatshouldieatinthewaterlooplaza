@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { MapPin } from 'lucide-react';
 import { AnimatedGoose } from './animated-goose';
 import { database } from '@/lib/firebase';
@@ -265,7 +265,7 @@ export default function RestaurantPicker() {
     <Card className="w-full max-w-md bg-white/90 backdrop-blur-sm">
       <CardHeader>
         <CardTitle className="text-2xl font-bold text-center text-gray-800">Let Code Decide for You</CardTitle>
-        <CardDescription className="text-center text-gray-600">Hope it's not Lazeez!</CardDescription>
+        <CardDescription className="text-center text-gray-600">Hope it`s not Lazeez!</CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col items-center">
         <div className="mb-4">
